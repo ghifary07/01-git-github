@@ -14,4 +14,4 @@ $ git config --list
 ```
 
 Hasilnya adalah:
-![config](images/02/config.png)
+![config](images/01/config.png)
