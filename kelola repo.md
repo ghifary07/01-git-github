@@ -5,15 +5,15 @@
 Sebelum mengelola repository, hal pertama yang harus dilakukan adalah membuat personal access token.
 Karena proses mengelola repo ini memerlukan akses repo dari command line / shell, sehingga wajib menggunakan token.
 Setelah membuat personal akses token mengikuti [petunjuk](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), hasilnya adalah:
-![tokenconfig](images/01/auth.png)
+![tokenconfig](images/01/auth.PNG)
 
 ## Membuat Repository
 
 1. Klik tanda + pada bagian kanan atas setelah login ke github, lalu pilih new repository.                      
-![repo](images/01/repo1.png)
+![repo](images/01/repo1.PNG)
 
 2. Isi nama repository, deskripsi, pengaturan publik atau private, lisensi, dan tambahan lainnya. Setelah itu klik create repository.
-![repo](images/01/repo2.png)
+![repo](images/01/repo2.PNG)
 
 ## Clone Repository
 
@@ -24,7 +24,7 @@ $ git clone https://github.com/ghifary07/01-git-github
 ```
 
 Setelah itu akan ada folder baru dengan nama repository tersebut di tempat dimana perintah itu diketikkan.
-![repo](images/01/repo3.png)
+![repo](images/01/repo3.PNG)
 
 Jika repo sudah di clone selanjutnya adalah mmengubah nama branch utama.
 Nama branch utama di pengaturan default git adalah master.
@@ -122,8 +122,8 @@ To https://github.com/ghifary07/01-git-github
  ```
 
 Saat melakukan push akan diminta personal access code. Masukkan personal access code yang sebelumnya dibuat.
-![repo](images/01/repo4.png)
+![repo](images/01/repo4.PNG)
 
 
 Setelah itu refresh halaman repository di github dan file sudah berhasil ditambahkan.
-![repo](images/01/repo5.png)
+![repo](images/01/repo5.PNG)

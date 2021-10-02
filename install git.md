@@ -69,4 +69,4 @@ dari repository remote ke repository lokal.
 ![Git](images/01/git18.jpeg)
 
 18. Jika git sudah terinstall ketikkan `<git --version>` pada command prompt. Jika muncul versi git maka git sudah berhasil diinstall.
-![Git](images/01/git19.png)
+![Git](images/01/git19.PNG)
