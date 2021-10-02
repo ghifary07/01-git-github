@@ -16,7 +16,7 @@ Selanjutnya dibutuhkan teks editor seperti [Sublime Text](https://www.sublimetex
 ---
 
 1. Jika sudah memiliki teks editor, klik dua kali pada file installer git yang sudah di download.
-Maka akan muncul jendela lisensi seperti ini. Klik tombol **Next** untuk melanjutkan.
+Maka akan muncul jendela lisensi seperti ini. Klik tombol **Next** untuk melanjutkan.                                  
 ![Git](images/01/git2.jpeg)
 
 1. Selanjutnya pilih lokasi dimana Git akan diinstall. Saya membiarkannya secara default yaitu di C:\Program files\Git.
@@ -34,10 +34,10 @@ Maka akan muncul jendela lisensi seperti ini. Klik tombol **Next** untuk melanju
 6. Setelah itu adalah mengatur nama branch utama ketika membuat repository baru. Pilihan pertama adalah pilihan default dengan branch utama dinamakan **master**. Pilihan kedua adalah untuk memberi nama secara custom seperti **main**, **utama**, dll. Disini saya memilih pilihan pertama.
 ![Git](images/01/git7.jpeg)
 
-7. Selanjutnya adalah mengatur PATH environtment untuk git. Saya memilih pilihan kedua agar git dapat digunakan melalui git bash ataupun command prompt pada windows.
+7. Selanjutnya adalah mengatur PATH environtment untuk git. Saya memilih pilihan kedua agar git dapat digunakan melalui git bash ataupun command prompt pada windows.                                      
 ![Git](images/01/git8.jpeg)
 
-8. Lalu memilih SSH yang akan digunakan oleh git. Secure shell atau SSH adalah protokol transfer yang memungkinkan penggunanya untuk mengontrol sebuah perangkat secara remote atau dari jarak jauh melalui koneksi internet. Saya memilih pilihan pertama untuk menggunakan SSH yang sudah disediakan git.
+8. Lalu memilih SSH yang akan digunakan oleh git. Secure shell atau SSH adalah protokol transfer yang memungkinkan penggunanya untuk mengontrol sebuah perangkat secara remote atau dari jarak jauh melalui koneksi internet. Saya memilih pilihan pertama untuk menggunakan SSH yang sudah disediakan git.                                                           
 ![Git](images/01/git9.jpeg)
 
 9. Selanjutnya saya memilih SSL untuk HTTPS. Git dapat menggunakan HTTPS atau SSH untuk mengakses repository pada github.
