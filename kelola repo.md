@@ -121,9 +121,14 @@ To https://github.com/ghifary07/01-git-github
  * [new branch]      main -> main
  ```
 
-Saat melakukan push akan diminta personal access code. Masukkan personal access code yang sebelumnya dibuat.
+Saat melakukan push akan diminta personal access token. Masukkan personal access token yang sebelumnya dibuat.
 ![repo](images/01/repo4.PNG)
 
 
 Setelah itu refresh halaman repository di github dan file sudah berhasil ditambahkan.
 ![repo](images/01/repo5.PNG)
+
+## Mengubah isi git - Push(Branching dan Merging)
+
+Cara ini dilakukan dengan cara membuat branch baru lalu menampung perubahan file pada branch baru tersebut. Setelah itu, branch yang baru dibuat tadi akan dibandingkan dengan branch utama lalu di merge atau digabung untuk memindahkan perubahan tadi ke branch utama.
+
