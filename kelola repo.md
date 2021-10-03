@@ -132,3 +132,80 @@ Setelah itu refresh halaman repository di github dan file sudah berhasil ditamba
 
 Cara ini dilakukan dengan cara membuat branch baru lalu menampung perubahan file pada branch baru tersebut. Setelah itu, branch yang baru dibuat tadi akan dibandingkan dengan branch utama lalu di merge atau digabung untuk memindahkan perubahan tadi ke branch utama.
 
+```
+C:\Users\USER\Documents\GitHub\01-git-github>git checkout -b edit-kelola
+Switched to a new branch 'edit-kelola'
+
+C:\Users\USER\Documents\GitHub\01-git-github>git status
+On branch edit-kelola
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   kelola repo.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\USER\Documents\GitHub\01-git-github>git add "kelola repo.md"
+
+C:\Users\USER\Documents\GitHub\01-git-github>git commit -m "mengedit laporan"
+[edit-kelola 4a57e52] mengedit laporan
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+C:\Users\USER\Documents\GitHub\01-git-github>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\USER\Documents\GitHub\01-git-github>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\USER\Documents\GitHub\01-git-github>git push origin edit-kelola
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 507 bytes | 253.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'edit-kelola' on GitHub by visiting:
+remote:      https://github.com/ghifary07/01-git-github/pull/new/edit-kelola
+remote:
+To https://github.com/ghifary07/01-git-github.git
+ * [new branch]      edit-kelola -> edit-kelola
+ ```
+
+`<git checkout nama branch>` digunakan untuk berpindah branch. Jika terdapat -b sebelum nama branch maka akan dibuat branch baru dengan nama branch tersebut.                                                                                                       
+
+
+Setelah itu buat pull request di github lalu compare dan merge branch.
+![config](images/01/merge.PNG)
+
+![config](images/01/merge2.PNG)
+
+Selanjutnya adalah merge di komputer lokal dan menghapus branch yang dibuat tadi.                                                
+
+```
+C:\Users\USER\Documents\GitHub\01-git-github>git merge edit-kelola
+Updating 2ea0ab3..4a57e52
+Fast-forward
+ kelola repo.md | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+C:\Users\USER\Documents\GitHub\01-git-github>git branch -D edit-kelola
+Deleted branch edit-kelola (was 4a57e52).
+
+C:\Users\USER\Documents\GitHub\01-git-github>git branch
+* main
+
+C:\Users\USER\Documents\GitHub\01-git-github>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 641 bytes | 160.00 KiB/s, done.
+From https://github.com/ghifary07/01-git-github
+   2ea0ab3..c965357  main       -> origin/main
+Updating 4a57e52..c965357
+Fast-forward
+```
